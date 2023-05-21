@@ -1,0 +1,21 @@
+{
+    "name": "events-app",
+    "version": "1.0.0",
+    "description": "EventsApp(Angular + Spring Boot)",
+    "main": "index.js",
+    "scripts": {
+        "server": "cd spring-events-app && ./gradlew bootRun",
+        "client": "cd events-app && ng serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ViktorIukhlin/events-app.git"
+    },
+    "author": "viktoriukhlin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ViktorIukhlin/events-app/issues"
+    },
+    "homepage": "https://github.com/ViktorIukhlin/events-app#readme"
+}
