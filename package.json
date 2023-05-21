@@ -4,8 +4,8 @@
     "description": "EventsApp(Angular + Spring Boot)",
     "main": "index.js",
     "scripts": {
-        "server": "cd spring-events-app && ./gradlew bootRun",
-        "client": "cd events-app && ng serve",
+        "server": "cd server && ./gradlew bootRun",
+        "client": "cd client && ng serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

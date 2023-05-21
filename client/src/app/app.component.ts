@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Event } from './entity/event';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +11,11 @@ export class AppComponent {
   public event: Event;
 
   constructor(private http: HttpClient) {
-    this.http.get<Event>('http://localhost:8080/task').subscribe((result) => {
-      this.event = result;
-      console.log(this.event);
-    });
+    this.http
+      .get<Event>('http://localhost:8080/event?id=3')
+      .subscribe((result) => {
+        this.event = result;
+        console.log(this.event);
+      });
   }
 }
